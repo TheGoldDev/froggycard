@@ -2,7 +2,7 @@
   <div id="app" class="home">
     <div class="container container--home">
       <div class="container__left">
-          <router-link to="classement" class="btn btn--green btn--round"><img src="/images/Classement.svg" aria-label="aller au classement"></router-link>
+          <router-link to="classement" class="btn btn--green btn--round btn--classement"><img src="/images/Classement.svg" aria-label="aller au classement"></router-link>
           <ToggleLanguage />
       </div>
       <div class="container__middle">

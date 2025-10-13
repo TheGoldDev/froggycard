@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import { createI18n } from 'vue-i18n';
-import messages from '../src/js/messages'; 
+import messages from '../src/js/messages';
 
 const i18n = createI18n({
   locale: 'fr', // Locale par défaut
@@ -24,5 +24,5 @@ if (savedLang) {
 
 app
   .use(router)
-  .use(i18n) 
+  .use(i18n)
   .mount('#app');

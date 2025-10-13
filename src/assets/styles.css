@@ -17,6 +17,9 @@ body {
   width: 30vw;
 }
 
+.btn--classement{
+  visibility: hidden;
+}
 a {
   cursor: url("/public/images/main.svg"), pointer;
   color: #313131;

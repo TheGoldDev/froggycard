@@ -13,10 +13,10 @@
 
 
 <script setup>
-    import '../assets/styles.css';  //link css / scss
-    import { ref } from 'vue';
-    import objectsData from '../../public/data/objectDescription_en.json';
+import '../assets/styles.css';  //link css / scss
+import { ref } from 'vue';
+import objectsData from '../../public/data/objectDescription_en.json';
 
-    const objectDescription = ref('');
-    let word = "RATEAU"; 
+const objectDescription = ref('');
+let word = "RATEAU";
 </script>
