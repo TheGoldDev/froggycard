@@ -1,26 +1,41 @@
 {
-  "name": "mmi-world",
-  "version": "0.0.0",
+  "name": "strapi-front",
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "nuxt build",
+    "dev": "npx nuxi cleanup && set NODE_NO_WARNINGS=1 && nuxt dev --port 3090 --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "prettier --write",
+    "*.{css,scss}": "prettier --write"
   },
   "dependencies": {
-    "axios": "^1.6.8",
-    "vue": "^3.2.47",
-    "vue-i18n": "^9.10.2",
-    "vue-router": "^4.1.6"
+    "@nuxtjs/i18n": "^10.2.1",
+    "@nuxtjs/strapi": "npm:@nuxtjs/strapi-edge@latest",
+    "@pinia/nuxt": "^0.11.3",
+    "nuxt": "^4.3.1",
+    "nuxt-graphql-client": "^0.2.46",
+    "tarteaucitronjs": "^1.29.0",
+    "vue": "^3.5.29",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.2.0",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/eslint-config-prettier": "^7.1.0",
-    "eslint": "^8.34.0",
-    "eslint-plugin-vue": "^9.9.0",
-    "prettier": "^2.8.4",
-    "sass": "^1.71.1",
-    "vite": "^4.1.4"
+    "@nuxt/devtools": "^3.2.3",
+    "@nuxt/fonts": "^0.12.1",
+    "@nuxt/image": "^2.0.0",
+    "@nuxtjs/seo": "^3.3.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^25.3.5",
+    "autoprefixer": "^10.4.23",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "nuxt-swiper": "^2.0.1",
+    "postcss": "^8.5.6",
+    "prettier": "^3.7.4",
+    "tailwindcss": "^4.1.18"
   }
 }
