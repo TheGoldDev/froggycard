@@ -1,41 +1,39 @@
 {
-  "name": "strapi-front",
-  "type": "module",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "npx nuxi cleanup && set NODE_NO_WARNINGS=1 && nuxt dev --port 3090 --host",
+    "dev": "npx nuxi cleanup && nuxt dev --host 127.0.0.1 --port 9876",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "lint-staged": {
-    "*.{js,ts,vue}": "prettier --write",
-    "*.{css,scss}": "prettier --write"
+  "devDependencies": {
+    "@hypernym/nuxt-anime": "^2.1.1",
+    "@nuxt/devtools": "latest",
+    "@vite-pwa/nuxt": "^0.4.0",
+    "autoprefixer": "^10.4.16",
+    "node-sass": "^9.0.0",
+    "nuxt": "^3.7.4",
+    "nuxt-primevue": "^0.2.0",
+    "postcss": "^8.4.31",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^10.2.1",
-    "@nuxtjs/strapi": "npm:@nuxtjs/strapi-edge@latest",
-    "@pinia/nuxt": "^0.11.3",
-    "nuxt": "^4.3.1",
-    "nuxt-graphql-client": "^0.2.46",
-    "tarteaucitronjs": "^1.29.0",
-    "vue": "^3.5.29",
-    "vue-router": "^4.6.4"
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@nuxt/ui": "^2.9.0",
+    "@nuxtjs/axios": "^5.13.6",
+    "@pinia/nuxt": "^0.5.1",
+    "animejs": "^3.2.1",
+    "nuxt-icons": "^3.2.1",
+    "pinia": "^2.1.7",
+    "sass": "^1.69.0",
+    "vue-grid-layout": "^3.0.0-beta1"
   },
-  "devDependencies": {
-    "@nuxt/devtools": "^3.2.3",
-    "@nuxt/fonts": "^0.12.1",
-    "@nuxt/image": "^2.0.0",
-    "@nuxtjs/seo": "^3.3.0",
-    "@tailwindcss/vite": "^4.1.18",
-    "@types/node": "^25.3.5",
-    "autoprefixer": "^10.4.23",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "nuxt-swiper": "^2.0.1",
-    "postcss": "^8.5.6",
-    "prettier": "^3.7.4",
-    "tailwindcss": "^4.1.18"
+  "resolutions": {
+    "@nuxt/kit": "3.0.0-rc.13"
   }
 }
